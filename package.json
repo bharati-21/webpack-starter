@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Boilerplate template for webpack starter",
 	"private": true,
+	"homepage": "https://bharati-21.github.io/webpack-starter",
 	"main": "index.js",
 	"babel": {
 		"presets": [
@@ -15,6 +16,8 @@
 		"build": "webpack",
 		"watch": "webpack --watch",
 		"start": "webpack server --open",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist",
 		"//watch": "This has one downside. Need to refresh browser to see changes.",
 		"//webpack server": ""
 	},
@@ -38,6 +41,7 @@
 	},
 	"dependencies": {
 		"degit": "^2.8.4",
+		"gh-pages": "^4.0.0",
 		"react-confetti": "^6.1.0"
 	}
 }
