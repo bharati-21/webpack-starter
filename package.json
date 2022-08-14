@@ -35,5 +35,9 @@
 		"webpack-cli": "^4.10.0",
 		"webpack-dev-server": "^4.9.3",
 		"xml-loader": "^1.2.1"
+	},
+	"dependencies": {
+		"degit": "^2.8.4",
+		"react-confetti": "^6.1.0"
 	}
 }

@@ -22,3 +22,17 @@ body {
 	height: 100px;
 	width: 100px;
 }
+
+.btn {
+    background-color: #fafafa;
+    color: #212121;
+    border: none;
+    margin: 1rem auto;
+    display: block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: antiquewhite;
+}

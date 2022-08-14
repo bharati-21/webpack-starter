@@ -5,6 +5,7 @@ const webpack = require("webpack");
 module.exports = {
 	entry: {
 		bundle: path.resolve(__dirname, "src/index.js"),
+		shared: "react-confetti",
 	},
 	devtool: "inline-source-map", // not to be done in production mode
 	devServer: {
