@@ -1,4 +1,4 @@
-# Webpack Reac Starter Template
+# Webpack React Starter Template
 
 Starter template for react app developed using webpack. <br />
 [Live deployed website](https://bharati-21.github.io/webpack-starter) 
