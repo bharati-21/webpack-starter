@@ -13,9 +13,10 @@
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "webpack",
+		"build": "webpack --config=webpack.config.prod.js",
+		"build-dev": "webpack --config=webpack.config.dev.js",
 		"watch": "webpack --watch",
-		"start": "webpack server --open",
+		"start": "webpack server --config=webpack.config.js --open",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist",
 		"//watch": "This has one downside. Need to refresh browser to see changes.",
@@ -40,8 +41,10 @@
 		"xml-loader": "^1.2.1"
 	},
 	"dependencies": {
+		"clean-webpack-plugin": "^4.0.0",
 		"degit": "^2.8.4",
 		"gh-pages": "^4.0.0",
-		"react-confetti": "^6.1.0"
+		"react-confetti": "^6.1.0",
+		"webpack-merge": "^5.8.0"
 	}
 }
